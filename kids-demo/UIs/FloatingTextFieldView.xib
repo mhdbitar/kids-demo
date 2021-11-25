@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingTextFieldView" customModule="AlifBee_Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="210-Re-acx" id="Gr5-XT-1LS"/>
+                <outlet property="errorLabel" destination="8JX-Pc-d0b" id="CDN-fR-wtx"/>
+                <outlet property="errorView" destination="t9S-l6-KyS" id="I4N-VW-OBd"/>
+                <outlet property="fixedCommentLabel" destination="dkl-01-f1A" id="PlG-YE-Nz4"/>
+                <outlet property="labelCenterVerticalConstraint" destination="Rqh-sA-aHb" id="9Ut-LM-pjA"/>
+                <outlet property="labelTopConstraint" destination="hpj-tE-I8z" id="QEq-HN-Am5"/>
+                <outlet property="showPasswordButton" destination="SVz-dR-Mxm" id="VM0-Mr-WGj"/>
+                <outlet property="textField" destination="ExM-VX-8mz" id="bh5-4O-9ey"/>
+                <outlet property="titleLabel" destination="583-ea-whI" id="drD-XF-hcf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkl-01-f1A">
+                    <rect key="frame" x="16" y="75" width="382" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9S-l6-KyS" customClass="CustomView" customModule="AlifBee_Kids" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email address has incorrect format" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JX-Pc-d0b">
+                            <rect key="frame" x="16" y="59.5" width="382" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Wrong"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8JX-Pc-d0b" secondAttribute="trailing" constant="16" id="0NU-Nf-mfE"/>
+                        <constraint firstItem="8JX-Pc-d0b" firstAttribute="leading" secondItem="t9S-l6-KyS" secondAttribute="leading" constant="16" id="850-iB-ymb"/>
+                        <constraint firstAttribute="bottom" secondItem="8JX-Pc-d0b" secondAttribute="bottom" constant="8" id="EPN-jc-doT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="Wrong"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="set3dEffect" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="210-Re-acx" customClass="CustomView" customModule="AlifBee_Kids" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-VX-8mz">
+                            <rect key="frame" x="10" y="10" width="388" height="46"/>
+                            <color key="textColor" name="Secondary"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="583-ea-whI">
+                            <rect key="frame" x="10" y="15.5" width="300" height="25.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="OLB-dp-Qlr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVz-dR-Mxm">
+                            <rect key="frame" x="360" y="11" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="SVz-dR-Mxm" secondAttribute="height" multiplier="1:1" id="aAp-xC-Miq"/>
+                            </constraints>
+                            <state key="normal" image="Eye-closed"/>
+                            <connections>
+                                <action selector="showPasswordClick:" destination="-1" eventType="touchUpInside" id="pqA-E7-pAF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SVz-dR-Mxm" firstAttribute="height" secondItem="210-Re-acx" secondAttribute="height" multiplier="0.607143" id="7lt-k7-RB8"/>
+                        <constraint firstItem="583-ea-whI" firstAttribute="leading" secondItem="ExM-VX-8mz" secondAttribute="leading" id="C8B-hM-SWk"/>
+                        <constraint firstAttribute="trailing" secondItem="ExM-VX-8mz" secondAttribute="trailing" constant="16" id="DbG-qD-6Yu"/>
+                        <constraint firstItem="SVz-dR-Mxm" firstAttribute="centerY" secondItem="210-Re-acx" secondAttribute="centerY" id="OdC-kV-8tm"/>
+                        <constraint firstItem="583-ea-whI" firstAttribute="centerY" secondItem="210-Re-acx" secondAttribute="centerY" id="Rqh-sA-aHb"/>
+                        <constraint firstAttribute="trailing" secondItem="SVz-dR-Mxm" secondAttribute="trailing" constant="20" id="Yz8-SA-b3q"/>
+                        <constraint firstAttribute="bottom" secondItem="ExM-VX-8mz" secondAttribute="bottom" id="ghB-0O-8cI"/>
+                        <constraint firstItem="583-ea-whI" firstAttribute="top" secondItem="ExM-VX-8mz" secondAttribute="top" constant="10" id="hpj-tE-I8z"/>
+                        <constraint firstAttribute="height" constant="56" id="jOt-BU-zSl"/>
+                        <constraint firstItem="ExM-VX-8mz" firstAttribute="top" secondItem="210-Re-acx" secondAttribute="top" constant="10" id="p5Q-pY-blM"/>
+                        <constraint firstItem="ExM-VX-8mz" firstAttribute="leading" secondItem="210-Re-acx" secondAttribute="leading" constant="10" id="vGV-7s-FXH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="Secondary"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="set3dEffect" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hpj-tE-I8z"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dkl-01-f1A" secondAttribute="trailing" constant="16" id="BEl-WS-H4p"/>
+                <constraint firstItem="t9S-l6-KyS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DRT-SO-p70"/>
+                <constraint firstAttribute="bottom" secondItem="dkl-01-f1A" secondAttribute="bottom" constant="8" id="GF9-3k-1m7"/>
+                <constraint firstItem="210-Re-acx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LEf-iZ-D7x"/>
+                <constraint firstItem="dkl-01-f1A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="LhH-Xe-2YL"/>
+                <constraint firstItem="t9S-l6-KyS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YWj-bv-ycZ"/>
+                <constraint firstItem="210-Re-acx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="acl-yL-pBI"/>
+                <constraint firstAttribute="bottom" secondItem="t9S-l6-KyS" secondAttribute="bottom" id="sXL-Oq-ja9"/>
+                <constraint firstAttribute="trailing" secondItem="t9S-l6-KyS" secondAttribute="trailing" id="vIu-AP-RCd"/>
+                <constraint firstAttribute="trailing" secondItem="210-Re-acx" secondAttribute="trailing" id="yDA-Fq-pkh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="121.54017857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Eye-closed" width="24" height="24"/>
+        <namedColor name="Secondary">
+            <color red="0.40799999237060547" green="0.23100000619888306" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Wrong">
+            <color red="0.86799997091293335" green="0.29600000381469727" blue="0.22100000083446503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

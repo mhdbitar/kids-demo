@@ -7,15 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28470D0EA964D25C0A0718DE /* Pods_kids_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BC9C323189A25D48371FE9 /* Pods_kids_demo.framework */; };
 		4C0B47422746C7BF00C613D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47412746C7BF00C613D3 /* AppDelegate.swift */; };
 		4C0B47442746C7BF00C613D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47432746C7BF00C613D3 /* SceneDelegate.swift */; };
 		4C0B47462746C7BF00C613D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47452746C7BF00C613D3 /* ViewController.swift */; };
 		4C0B47492746C7BF00C613D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47472746C7BF00C613D3 /* Main.storyboard */; };
 		4C0B474B2746C7C000C613D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B474A2746C7C000C613D3 /* Assets.xcassets */; };
 		4C0B474E2746C7C000C613D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B474C2746C7C000C613D3 /* LaunchScreen.storyboard */; };
+		4C0B47562746C80400C613D3 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47552746C80400C613D3 /* SharedData.swift */; };
+		4C0B47712746C9B200C613D3 /* ManageChildrenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B475C2746C9B200C613D3 /* ManageChildrenViewController.xib */; };
+		4C0B47732746C9B200C613D3 /* EnterNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B475E2746C9B200C613D3 /* EnterNameViewController.swift */; };
+		4C0B47742746C9B200C613D3 /* EnterNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B475F2746C9B200C613D3 /* EnterNameViewController.xib */; };
+		4C0B47752746C9B200C613D3 /* SelectAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47602746C9B200C613D3 /* SelectAgeViewController.swift */; };
+		4C0B47762746C9B200C613D3 /* SelectGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47612746C9B200C613D3 /* SelectGenderViewController.swift */; };
+		4C0B47772746C9B200C613D3 /* SelectGenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47622746C9B200C613D3 /* SelectGenderViewController.xib */; };
+		4C0B47792746C9B200C613D3 /* ManageChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47642746C9B200C613D3 /* ManageChildrenViewController.swift */; };
+		4C0B477A2746C9B200C613D3 /* ManageChildrenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47662746C9B200C613D3 /* ManageChildrenTableViewCell.xib */; };
+		4C0B477B2746C9B200C613D3 /* SelectGenderButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47672746C9B200C613D3 /* SelectGenderButton.xib */; };
+		4C0B477C2746C9B200C613D3 /* SelectAgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47682746C9B200C613D3 /* SelectAgeButton.swift */; };
+		4C0B477D2746C9B200C613D3 /* SelectAgeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47692746C9B200C613D3 /* SelectAgeButton.xib */; };
+		4C0B477E2746C9B200C613D3 /* ManageChildrenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B476A2746C9B200C613D3 /* ManageChildrenTableViewCell.swift */; };
+		4C0B477F2746C9B200C613D3 /* SelectGenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B476B2746C9B200C613D3 /* SelectGenderButton.swift */; };
+		4C0B47802746C9B200C613D3 /* SelectAgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B476C2746C9B200C613D3 /* SelectAgeViewController.xib */; };
+		4C0B47812746C9B200C613D3 /* ChildInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B476E2746C9B200C613D3 /* ChildInfoViewModel.swift */; };
+		4C0B47832746C9B200C613D3 /* ManageChildrenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47702746C9B200C613D3 /* ManageChildrenViewModel.swift */; };
+		4C0B47872746CAC200C613D3 /* FloatingTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47852746CAC200C613D3 /* FloatingTextFieldView.xib */; };
+		4C0B47882746CAC200C613D3 /* FloatingTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47862746CAC200C613D3 /* FloatingTextFieldView.swift */; };
+		4C0B478B2746CADF00C613D3 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47892746CADE00C613D3 /* BackButton.swift */; };
+		4C0B478C2746CADF00C613D3 /* BackButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B478A2746CADF00C613D3 /* BackButton.xib */; };
+		4C0B478F2746CAE700C613D3 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B478D2746CAE700C613D3 /* CustomButtonView.swift */; };
+		4C0B47902746CAE700C613D3 /* CustomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B478E2746CAE700C613D3 /* CustomButtonView.xib */; };
+		4C0B47932746CE5F00C613D3 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47922746CE5F00C613D3 /* Child.swift */; };
+		4C0B47962746D2EB00C613D3 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47942746D2EB00C613D3 /* ProgressBar.swift */; };
+		4C0B47972746D2EB00C613D3 /* ProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B47952746D2EB00C613D3 /* ProgressBar.xib */; };
+		4C0B479D2746D82D00C613D3 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B479C2746D82D00C613D3 /* CustomView.swift */; };
+		4C0B479F2746D89D00C613D3 /* Colors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B479E2746D89D00C613D3 /* Colors+Ext.swift */; };
+		4C0B47A22746D96400C613D3 /* LoadableFromXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47A12746D96400C613D3 /* LoadableFromXibView.swift */; };
+		4C0B47A42746DC9600C613D3 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B47A32746DC9600C613D3 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10BC9C323189A25D48371FE9 /* Pods_kids_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kids_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0B473E2746C7BF00C613D3 /* kids-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kids-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0B47412746C7BF00C613D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C0B47432746C7BF00C613D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +56,38 @@
 		4C0B474A2746C7C000C613D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0B474D2746C7C000C613D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0B474F2746C7C000C613D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0B47552746C80400C613D3 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		4C0B475C2746C9B200C613D3 /* ManageChildrenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageChildrenViewController.xib; sourceTree = "<group>"; };
+		4C0B475E2746C9B200C613D3 /* EnterNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameViewController.swift; sourceTree = "<group>"; };
+		4C0B475F2746C9B200C613D3 /* EnterNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterNameViewController.xib; sourceTree = "<group>"; };
+		4C0B47602746C9B200C613D3 /* SelectAgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAgeViewController.swift; sourceTree = "<group>"; };
+		4C0B47612746C9B200C613D3 /* SelectGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGenderViewController.swift; sourceTree = "<group>"; };
+		4C0B47622746C9B200C613D3 /* SelectGenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGenderViewController.xib; sourceTree = "<group>"; };
+		4C0B47642746C9B200C613D3 /* ManageChildrenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageChildrenViewController.swift; sourceTree = "<group>"; };
+		4C0B47662746C9B200C613D3 /* ManageChildrenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageChildrenTableViewCell.xib; sourceTree = "<group>"; };
+		4C0B47672746C9B200C613D3 /* SelectGenderButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectGenderButton.xib; sourceTree = "<group>"; };
+		4C0B47682746C9B200C613D3 /* SelectAgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAgeButton.swift; sourceTree = "<group>"; };
+		4C0B47692746C9B200C613D3 /* SelectAgeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectAgeButton.xib; sourceTree = "<group>"; };
+		4C0B476A2746C9B200C613D3 /* ManageChildrenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageChildrenTableViewCell.swift; sourceTree = "<group>"; };
+		4C0B476B2746C9B200C613D3 /* SelectGenderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGenderButton.swift; sourceTree = "<group>"; };
+		4C0B476C2746C9B200C613D3 /* SelectAgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectAgeViewController.xib; sourceTree = "<group>"; };
+		4C0B476E2746C9B200C613D3 /* ChildInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildInfoViewModel.swift; sourceTree = "<group>"; };
+		4C0B47702746C9B200C613D3 /* ManageChildrenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageChildrenViewModel.swift; sourceTree = "<group>"; };
+		4C0B47852746CAC200C613D3 /* FloatingTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingTextFieldView.xib; sourceTree = "<group>"; };
+		4C0B47862746CAC200C613D3 /* FloatingTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingTextFieldView.swift; sourceTree = "<group>"; };
+		4C0B47892746CADE00C613D3 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		4C0B478A2746CADF00C613D3 /* BackButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackButton.xib; sourceTree = "<group>"; };
+		4C0B478D2746CAE700C613D3 /* CustomButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		4C0B478E2746CAE700C613D3 /* CustomButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButtonView.xib; sourceTree = "<group>"; };
+		4C0B47922746CE5F00C613D3 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		4C0B47942746D2EB00C613D3 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		4C0B47952746D2EB00C613D3 /* ProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressBar.xib; sourceTree = "<group>"; };
+		4C0B479C2746D82D00C613D3 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		4C0B479E2746D89D00C613D3 /* Colors+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors+Ext.swift"; sourceTree = "<group>"; };
+		4C0B47A12746D96400C613D3 /* LoadableFromXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableFromXibView.swift; sourceTree = "<group>"; };
+		4C0B47A32746DC9600C613D3 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		531BC5C55CA848CC98AA51E1 /* Pods-kids-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kids-demo.release.xcconfig"; path = "Target Support Files/Pods-kids-demo/Pods-kids-demo.release.xcconfig"; sourceTree = "<group>"; };
+		FD3BEE102F1C6FB7CFDF2427 /* Pods-kids-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kids-demo.debug.xcconfig"; path = "Target Support Files/Pods-kids-demo/Pods-kids-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +95,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28470D0EA964D25C0A0718DE /* Pods_kids_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2322FC9D799493A2E837711B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD3BEE102F1C6FB7CFDF2427 /* Pods-kids-demo.debug.xcconfig */,
+				531BC5C55CA848CC98AA51E1 /* Pods-kids-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4C0B47352746C7BE00C613D3 = {
 			isa = PBXGroup;
 			children = (
 				4C0B47402746C7BF00C613D3 /* kids-demo */,
 				4C0B473F2746C7BF00C613D3 /* Products */,
+				2322FC9D799493A2E837711B /* Pods */,
+				BD0C13A5FF632719BACEB92D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +132,9 @@
 		4C0B47402746C7BF00C613D3 /* kids-demo */ = {
 			isa = PBXGroup;
 			children = (
+				4C0B47912746CE5700C613D3 /* Data */,
+				4C0B47842746CAAB00C613D3 /* UIs */,
+				4C0B47572746C84500C613D3 /* Parent */,
 				4C0B47412746C7BF00C613D3 /* AppDelegate.swift */,
 				4C0B47432746C7BF00C613D3 /* SceneDelegate.swift */,
 				4C0B47452746C7BF00C613D3 /* ViewController.swift */,
@@ -63,8 +142,139 @@
 				4C0B474A2746C7C000C613D3 /* Assets.xcassets */,
 				4C0B474C2746C7C000C613D3 /* LaunchScreen.storyboard */,
 				4C0B474F2746C7C000C613D3 /* Info.plist */,
+				4C0B47552746C80400C613D3 /* SharedData.swift */,
 			);
 			path = "kids-demo";
+			sourceTree = "<group>";
+		};
+		4C0B47572746C84500C613D3 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47582746C84D00C613D3 /* Manage Children */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		4C0B47582746C84D00C613D3 /* Manage Children */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B476D2746C9B200C613D3 /* ViewModels */,
+				4C0B475B2746C9B200C613D3 /* Views */,
+			);
+			path = "Manage Children";
+			sourceTree = "<group>";
+		};
+		4C0B475B2746C9B200C613D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47982746D33300C613D3 /* Manage */,
+				4C0B47992746D33C00C613D3 /* Enter name */,
+				4C0B479A2746D34800C613D3 /* Select Age */,
+				4C0B479B2746D35400C613D3 /* Select Gener */,
+				4C0B47652746C9B200C613D3 /* Partials */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C0B47652746C9B200C613D3 /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47662746C9B200C613D3 /* ManageChildrenTableViewCell.xib */,
+				4C0B476A2746C9B200C613D3 /* ManageChildrenTableViewCell.swift */,
+				4C0B47672746C9B200C613D3 /* SelectGenderButton.xib */,
+				4C0B476B2746C9B200C613D3 /* SelectGenderButton.swift */,
+				4C0B47682746C9B200C613D3 /* SelectAgeButton.swift */,
+				4C0B47692746C9B200C613D3 /* SelectAgeButton.xib */,
+			);
+			path = Partials;
+			sourceTree = "<group>";
+		};
+		4C0B476D2746C9B200C613D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B476E2746C9B200C613D3 /* ChildInfoViewModel.swift */,
+				4C0B47702746C9B200C613D3 /* ManageChildrenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C0B47842746CAAB00C613D3 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47A02746D8A000C613D3 /* Extensions */,
+				4C0B47942746D2EB00C613D3 /* ProgressBar.swift */,
+				4C0B47952746D2EB00C613D3 /* ProgressBar.xib */,
+				4C0B478D2746CAE700C613D3 /* CustomButtonView.swift */,
+				4C0B478E2746CAE700C613D3 /* CustomButtonView.xib */,
+				4C0B47892746CADE00C613D3 /* BackButton.swift */,
+				4C0B478A2746CADF00C613D3 /* BackButton.xib */,
+				4C0B47862746CAC200C613D3 /* FloatingTextFieldView.swift */,
+				4C0B47852746CAC200C613D3 /* FloatingTextFieldView.xib */,
+				4C0B479C2746D82D00C613D3 /* CustomView.swift */,
+				4C0B47A12746D96400C613D3 /* LoadableFromXibView.swift */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		4C0B47912746CE5700C613D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47922746CE5F00C613D3 /* Child.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4C0B47982746D33300C613D3 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B475C2746C9B200C613D3 /* ManageChildrenViewController.xib */,
+				4C0B47642746C9B200C613D3 /* ManageChildrenViewController.swift */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		4C0B47992746D33C00C613D3 /* Enter name */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B475E2746C9B200C613D3 /* EnterNameViewController.swift */,
+				4C0B475F2746C9B200C613D3 /* EnterNameViewController.xib */,
+			);
+			path = "Enter name";
+			sourceTree = "<group>";
+		};
+		4C0B479A2746D34800C613D3 /* Select Age */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47602746C9B200C613D3 /* SelectAgeViewController.swift */,
+				4C0B476C2746C9B200C613D3 /* SelectAgeViewController.xib */,
+			);
+			path = "Select Age";
+			sourceTree = "<group>";
+		};
+		4C0B479B2746D35400C613D3 /* Select Gener */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B47612746C9B200C613D3 /* SelectGenderViewController.swift */,
+				4C0B47622746C9B200C613D3 /* SelectGenderViewController.xib */,
+			);
+			path = "Select Gener";
+			sourceTree = "<group>";
+		};
+		4C0B47A02746D8A000C613D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B479E2746D89D00C613D3 /* Colors+Ext.swift */,
+				4C0B47A32746DC9600C613D3 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD0C13A5FF632719BACEB92D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10BC9C323189A25D48371FE9 /* Pods_kids_demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C0B47522746C7C000C613D3 /* Build configuration list for PBXNativeTarget "kids-demo" */;
 			buildPhases = (
+				446F796CE414E7AC0813A40E /* [CP] Check Pods Manifest.lock */,
 				4C0B473A2746C7BF00C613D3 /* Sources */,
 				4C0B473B2746C7BF00C613D3 /* Frameworks */,
 				4C0B473C2746C7BF00C613D3 /* Resources */,
+				5281B859C2813775B22B88F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +337,94 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0B47902746CAE700C613D3 /* CustomButtonView.xib in Resources */,
+				4C0B478C2746CADF00C613D3 /* BackButton.xib in Resources */,
+				4C0B47772746C9B200C613D3 /* SelectGenderViewController.xib in Resources */,
+				4C0B47712746C9B200C613D3 /* ManageChildrenViewController.xib in Resources */,
+				4C0B47742746C9B200C613D3 /* EnterNameViewController.xib in Resources */,
 				4C0B474E2746C7C000C613D3 /* LaunchScreen.storyboard in Resources */,
+				4C0B47872746CAC200C613D3 /* FloatingTextFieldView.xib in Resources */,
+				4C0B477A2746C9B200C613D3 /* ManageChildrenTableViewCell.xib in Resources */,
 				4C0B474B2746C7C000C613D3 /* Assets.xcassets in Resources */,
+				4C0B477B2746C9B200C613D3 /* SelectGenderButton.xib in Resources */,
 				4C0B47492746C7BF00C613D3 /* Main.storyboard in Resources */,
+				4C0B47802746C9B200C613D3 /* SelectAgeViewController.xib in Resources */,
+				4C0B47972746D2EB00C613D3 /* ProgressBar.xib in Resources */,
+				4C0B477D2746C9B200C613D3 /* SelectAgeButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		446F796CE414E7AC0813A40E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kids-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5281B859C2813775B22B88F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kids-demo/Pods-kids-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kids-demo/Pods-kids-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kids-demo/Pods-kids-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C0B473A2746C7BF00C613D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0B47A22746D96400C613D3 /* LoadableFromXibView.swift in Sources */,
+				4C0B477F2746C9B200C613D3 /* SelectGenderButton.swift in Sources */,
+				4C0B47962746D2EB00C613D3 /* ProgressBar.swift in Sources */,
+				4C0B478F2746CAE700C613D3 /* CustomButtonView.swift in Sources */,
 				4C0B47462746C7BF00C613D3 /* ViewController.swift in Sources */,
+				4C0B477C2746C9B200C613D3 /* SelectAgeButton.swift in Sources */,
+				4C0B479D2746D82D00C613D3 /* CustomView.swift in Sources */,
+				4C0B477E2746C9B200C613D3 /* ManageChildrenTableViewCell.swift in Sources */,
+				4C0B47792746C9B200C613D3 /* ManageChildrenViewController.swift in Sources */,
+				4C0B47812746C9B200C613D3 /* ChildInfoViewModel.swift in Sources */,
 				4C0B47422746C7BF00C613D3 /* AppDelegate.swift in Sources */,
+				4C0B47932746CE5F00C613D3 /* Child.swift in Sources */,
+				4C0B47A42746DC9600C613D3 /* UIView+Ext.swift in Sources */,
+				4C0B47832746C9B200C613D3 /* ManageChildrenViewModel.swift in Sources */,
+				4C0B478B2746CADF00C613D3 /* BackButton.swift in Sources */,
+				4C0B47752746C9B200C613D3 /* SelectAgeViewController.swift in Sources */,
+				4C0B47882746CAC200C613D3 /* FloatingTextFieldView.swift in Sources */,
+				4C0B47762746C9B200C613D3 /* SelectGenderViewController.swift in Sources */,
+				4C0B479F2746D89D00C613D3 /* Colors+Ext.swift in Sources */,
 				4C0B47442746C7BF00C613D3 /* SceneDelegate.swift in Sources */,
+				4C0B47732746C9B200C613D3 /* EnterNameViewController.swift in Sources */,
+				4C0B47562746C80400C613D3 /* SharedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +568,7 @@
 		};
 		4C0B47532746C7C000C613D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3BEE102F1C6FB7CFDF2427 /* Pods-kids-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +597,7 @@
 		};
 		4C0B47542746C7C000C613D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531BC5C55CA848CC98AA51E1 /* Pods-kids-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

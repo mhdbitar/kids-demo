@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </array>
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectGenderViewController" customModule="kids_demo" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="yLr-Va-Pi1" id="ECY-Rf-Tac"/>
+                <outlet property="boyButton" destination="oKQ-35-BsF" id="tdQ-qe-ZWB"/>
+                <outlet property="girlButton" destination="hZ6-lZ-tWU" id="vXa-B4-FVd"/>
+                <outlet property="stepText" destination="Czp-70-xeV" id="7SX-ex-RFf"/>
+                <outlet property="view" destination="QY4-sj-277" id="3ZD-PH-MAk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QY4-sj-277">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMq-V0-siL" userLabel="topInfo">
+                    <rect key="frame" x="20" y="44" width="374" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLr-Va-Pi1" customClass="BackButton" customModule="kids_demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="3" width="25" height="44"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Tni-hw-HQJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="BACKbutton"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czp-70-xeV">
+                            <rect key="frame" x="325" y="13.5" width="49" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SHn-0K-GJJ"/>
+                        <constraint firstItem="yLr-Va-Pi1" firstAttribute="top" secondItem="iMq-V0-siL" secondAttribute="top" constant="3" id="ZfW-2q-Gf4"/>
+                        <constraint firstItem="Czp-70-xeV" firstAttribute="centerY" secondItem="iMq-V0-siL" secondAttribute="centerY" id="Zvq-H2-pdh"/>
+                        <constraint firstAttribute="trailing" secondItem="Czp-70-xeV" secondAttribute="trailing" id="a3k-rh-Wk4"/>
+                        <constraint firstItem="yLr-Va-Pi1" firstAttribute="leading" secondItem="iMq-V0-siL" secondAttribute="leading" id="kx5-Wy-zGd"/>
+                        <constraint firstAttribute="bottom" secondItem="yLr-Va-Pi1" secondAttribute="bottom" constant="3" id="wKB-HG-0pf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-hW-3Dh" userLabel="title">
+                    <rect key="frame" x="20" y="114" width="374" height="113.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcZ-i7-yX7" userLabel="What's the gender  of your child?">
+                            <rect key="frame" x="0.0" y="10" width="374" height="93.5"/>
+                            <string key="text">What's the gender 
+of your child?</string>
+                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gcZ-i7-yX7" firstAttribute="leading" secondItem="6YH-hW-3Dh" secondAttribute="leading" id="NGh-9a-eUu"/>
+                        <constraint firstAttribute="trailing" secondItem="gcZ-i7-yX7" secondAttribute="trailing" id="Qje-Ad-isY"/>
+                        <constraint firstAttribute="bottom" secondItem="gcZ-i7-yX7" secondAttribute="bottom" constant="10" id="QpT-QT-aBX"/>
+                        <constraint firstItem="gcZ-i7-yX7" firstAttribute="top" secondItem="6YH-hW-3Dh" secondAttribute="top" constant="10" id="rdm-Li-XBR"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JTy-xc-xk1" userLabel="choicesContainer">
+                    <rect key="frame" x="16" y="247.5" width="382" height="183"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-lZ-tWU" userLabel="Girl" customClass="SelectGenderButton" customModule="kids_demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="183"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hZ6-lZ-tWU" secondAttribute="height" multiplier="1:1" id="fYM-xm-mUO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKQ-35-BsF" userLabel="Boy" customClass="SelectGenderButton" customModule="kids_demo" customModuleProvider="target">
+                            <rect key="frame" x="199" y="0.0" width="183" height="183"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="oKQ-35-BsF" secondAttribute="height" multiplier="1:1" id="F9a-k4-xF4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6VU-2e-65u"/>
+            <color key="backgroundColor" name="KidsBgColor"/>
+            <constraints>
+                <constraint firstItem="JTy-xc-xk1" firstAttribute="top" secondItem="6YH-hW-3Dh" secondAttribute="bottom" constant="20" id="Q3e-P2-0mU"/>
+                <constraint firstItem="JTy-xc-xk1" firstAttribute="leading" secondItem="6VU-2e-65u" secondAttribute="leading" constant="16" id="QPV-5J-07d">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstItem="6YH-hW-3Dh" firstAttribute="leading" secondItem="6VU-2e-65u" secondAttribute="leading" constant="20" id="QSM-qJ-KRZ"/>
+                <constraint firstItem="6VU-2e-65u" firstAttribute="trailing" secondItem="6YH-hW-3Dh" secondAttribute="trailing" constant="20" id="SOE-qZ-Ifo"/>
+                <constraint firstItem="6YH-hW-3Dh" firstAttribute="top" secondItem="iMq-V0-siL" secondAttribute="bottom" constant="20" id="UMm-Qa-qU5"/>
+                <constraint firstItem="iMq-V0-siL" firstAttribute="top" secondItem="6VU-2e-65u" secondAttribute="top" id="dzM-AX-L4Z"/>
+                <constraint firstItem="6VU-2e-65u" firstAttribute="trailing" secondItem="iMq-V0-siL" secondAttribute="trailing" constant="20" id="fBM-Tb-xaz"/>
+                <constraint firstItem="iMq-V0-siL" firstAttribute="leading" secondItem="6VU-2e-65u" secondAttribute="leading" constant="20" id="hQM-ZY-71T"/>
+                <constraint firstItem="6VU-2e-65u" firstAttribute="trailing" secondItem="JTy-xc-xk1" secondAttribute="trailing" constant="16" id="l7l-ZW-xwL">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+            </constraints>
+            <point key="canvasLocation" x="120" y="38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BACKbutton" width="25" height="38"/>
+        <namedColor name="KidsBgColor">
+            <color red="0.20392156862745098" green="0.52156862745098043" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

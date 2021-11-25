@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageChildrenViewController" customModule="kids_demo" customModuleProvider="target">
+            <connections>
+                <outlet property="addChildButton" destination="cf2-gI-pqJ" id="dEA-Tm-icJ"/>
+                <outlet property="backButton" destination="Ndm-Bz-WRS" id="cr6-h0-CCs"/>
+                <outlet property="tableView" destination="iIC-lX-7QP" id="7Su-8M-Ypo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuF-ka-gRI" userLabel="topInfo">
+                    <rect key="frame" x="16" y="44" width="382" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndm-Bz-WRS" customClass="BackButton" customModule="kids_demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="3" width="25" height="38"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="zug-9b-uPJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="BACKbutton"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Children" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDT-ZN-1AQ">
+                            <rect key="frame" x="99.5" y="8" width="183" height="28"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ndm-Bz-WRS" firstAttribute="leading" secondItem="yuF-ka-gRI" secondAttribute="leading" id="BPT-LQ-T4M"/>
+                        <constraint firstAttribute="bottom" secondItem="Ndm-Bz-WRS" secondAttribute="bottom" constant="3" id="Nu8-nC-4j6"/>
+                        <constraint firstItem="CDT-ZN-1AQ" firstAttribute="centerY" secondItem="yuF-ka-gRI" secondAttribute="centerY" id="Pfw-NC-mUd"/>
+                        <constraint firstItem="CDT-ZN-1AQ" firstAttribute="centerX" secondItem="yuF-ka-gRI" secondAttribute="centerX" id="QlL-HV-uRB"/>
+                        <constraint firstAttribute="height" constant="44" id="oQf-xV-4KX"/>
+                        <constraint firstItem="Ndm-Bz-WRS" firstAttribute="top" secondItem="yuF-ka-gRI" secondAttribute="top" constant="3" id="tc9-YJ-TTW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can add up to 5 chilldren" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaH-vk-yF1">
+                    <rect key="frame" x="16" y="131" width="382" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cf2-gI-pqJ" customClass="CustomButtonView" customModule="kids_demo" customModuleProvider="target">
+                    <rect key="frame" x="16" y="170.5" width="382" height="48"/>
+                    <color key="backgroundColor" name="KidsBgColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="lzb-QJ-XVq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundIndicatorLineWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="StrokRed"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ButtonColor">
+                            <color key="value" red="0.2156862745" green="0.5568627451" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                            <color key="value" name="ButtonBlue"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonDarkenColor">
+                            <color key="value" name="DarkBlue"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonLightenColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" name="ButtonWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="+ Add Child"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textAlign" value="left"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="lImage" value="addChildIcon"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iIC-lX-7QP">
+                    <rect key="frame" x="16" y="232.5" width="382" height="663.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="KidsBgColor"/>
+            <constraints>
+                <constraint firstItem="FaH-vk-yF1" firstAttribute="top" secondItem="yuF-ka-gRI" secondAttribute="bottom" constant="43" id="27B-R6-hYQ"/>
+                <constraint firstAttribute="trailing" secondItem="yuF-ka-gRI" secondAttribute="trailing" constant="16" id="62f-js-Say"/>
+                <constraint firstItem="iIC-lX-7QP" firstAttribute="top" secondItem="cf2-gI-pqJ" secondAttribute="bottom" constant="14" id="D5b-FL-I7l"/>
+                <constraint firstAttribute="trailing" secondItem="iIC-lX-7QP" secondAttribute="trailing" constant="16" id="Eki-cW-0bu"/>
+                <constraint firstItem="iIC-lX-7QP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="GcN-IH-Fvk"/>
+                <constraint firstItem="yuF-ka-gRI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jyf-mS-fbm"/>
+                <constraint firstItem="yuF-ka-gRI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Y6t-3j-1w2"/>
+                <constraint firstAttribute="bottom" secondItem="iIC-lX-7QP" secondAttribute="bottom" id="b7L-Ms-nMr"/>
+                <constraint firstItem="cf2-gI-pqJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ile-a8-cvR"/>
+                <constraint firstAttribute="trailing" secondItem="FaH-vk-yF1" secondAttribute="trailing" constant="16" id="jSN-4c-4Ew"/>
+                <constraint firstAttribute="trailing" secondItem="cf2-gI-pqJ" secondAttribute="trailing" constant="16" id="nau-FE-pHz"/>
+                <constraint firstItem="cf2-gI-pqJ" firstAttribute="top" secondItem="FaH-vk-yF1" secondAttribute="bottom" constant="16" id="wED-dd-4bk"/>
+                <constraint firstItem="FaH-vk-yF1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="xZf-uP-QE7"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="68.973214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BACKbutton" width="25" height="38"/>
+        <image name="addChildIcon" width="24" height="24"/>
+        <namedColor name="ButtonBlue">
+            <color red="0.32499998807907104" green="0.66100001335144043" blue="0.97200000286102295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ButtonWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkBlue">
+            <color red="0.2720000147819519" green="0.53100001811981201" blue="0.96799999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="KidsBgColor">
+            <color red="0.20392156862745098" green="0.52156862745098043" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="StrokRed">
+            <color red="0.58823529411764708" green="0.019607843137254902" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

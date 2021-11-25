@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </array>
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterNameViewController" customModule="kids_demo" customModuleProvider="target">
+            <connections>
+                <outlet property="SendButton" destination="eJL-Lq-TD8" id="SX7-rh-zM4"/>
+                <outlet property="backButton" destination="SUI-6d-TdB" id="OX5-Nc-bsh"/>
+                <outlet property="fieldHeightConstraint" destination="yXk-xA-D6h" id="Dae-h8-Yr4"/>
+                <outlet property="nameField" destination="Fio-Oe-4g3" id="Wxe-Ur-1Fx"/>
+                <outlet property="stepText" destination="kpO-ES-aaa" id="Gop-Wd-P4F"/>
+                <outlet property="titleText" destination="1vF-8G-9IN" id="xdz-Vn-ufj"/>
+                <outlet property="view" destination="yRM-4y-1da" id="IO5-jz-mbX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yRM-4y-1da">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-ue-GSw" userLabel="topInfo">
+                    <rect key="frame" x="20" y="44" width="374" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUI-6d-TdB" customClass="BackButton" customModule="kids_demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="3" width="25" height="44"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="0Pg-1e-hTO"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="BACKbutton"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-ES-aaa">
+                            <rect key="frame" x="325" y="13.5" width="49" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SUI-6d-TdB" firstAttribute="top" secondItem="Jc0-ue-GSw" secondAttribute="top" constant="3" id="BQB-iR-4zR"/>
+                        <constraint firstAttribute="trailing" secondItem="kpO-ES-aaa" secondAttribute="trailing" id="F4Y-BS-IEE"/>
+                        <constraint firstAttribute="height" constant="50" id="U5e-sU-3pC"/>
+                        <constraint firstItem="kpO-ES-aaa" firstAttribute="centerY" secondItem="Jc0-ue-GSw" secondAttribute="centerY" id="YyT-bY-28f"/>
+                        <constraint firstItem="SUI-6d-TdB" firstAttribute="leading" secondItem="Jc0-ue-GSw" secondAttribute="leading" id="rDE-NT-JR2"/>
+                        <constraint firstAttribute="bottom" secondItem="SUI-6d-TdB" secondAttribute="bottom" constant="3" id="ue2-bt-PHx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qub-Z3-wuy" userLabel="title">
+                    <rect key="frame" x="20" y="114" width="374" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What’s ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vF-8G-9IN" userLabel="What's the gender  of your child?">
+                            <rect key="frame" x="0.0" y="10" width="374" height="47"/>
+                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1vF-8G-9IN" firstAttribute="top" secondItem="qub-Z3-wuy" secondAttribute="top" constant="10" id="Nmq-uq-xCl"/>
+                        <constraint firstItem="1vF-8G-9IN" firstAttribute="leading" secondItem="qub-Z3-wuy" secondAttribute="leading" id="Vhr-3i-IVc"/>
+                        <constraint firstAttribute="trailing" secondItem="1vF-8G-9IN" secondAttribute="trailing" id="pS8-34-n46"/>
+                        <constraint firstAttribute="bottom" secondItem="1vF-8G-9IN" secondAttribute="bottom" constant="10" id="uqw-cz-YNu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fio-Oe-4g3" customClass="FloatingTextFieldView" customModule="kids_demo" customModuleProvider="target">
+                    <rect key="frame" x="20" y="206" width="374" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="yXk-xA-D6h"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313729999999" green="0.23137254900000001" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter name"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJL-Lq-TD8" customClass="CustomButtonView" customModule="kids_demo" customModuleProvider="target">
+                    <rect key="frame" x="20" y="287" width="374" height="55"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="i0N-Ib-xHO">
+                            <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundIndicatorLineWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.45197826619999998" green="0.26406320929999999" blue="0.49141579870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ButtonColor">
+                            <color key="value" red="0.2156862745" green="0.5568627451" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                            <color key="value" red="0.99995166059999996" green="0.83123689889999997" blue="0.066056139769999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonDarkenColor">
+                            <color key="value" red="0.99997311830000002" green="0.71704566479999998" blue="0.066071294249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonLightenColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.45197826619999998" green="0.26406320929999999" blue="0.49141579870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonText" value="Continue"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="AZH-2d-0U5"/>
+            <color key="backgroundColor" name="KidsBgColor"/>
+            <constraints>
+                <constraint firstItem="AZH-2d-0U5" firstAttribute="trailing" secondItem="eJL-Lq-TD8" secondAttribute="trailing" constant="20" id="0Fj-Of-s58"/>
+                <constraint firstItem="AZH-2d-0U5" firstAttribute="trailing" secondItem="qub-Z3-wuy" secondAttribute="trailing" constant="20" id="1HO-EF-fck"/>
+                <constraint firstItem="eJL-Lq-TD8" firstAttribute="top" secondItem="Fio-Oe-4g3" secondAttribute="bottom" constant="25" id="36I-VR-7YY"/>
+                <constraint firstItem="Fio-Oe-4g3" firstAttribute="top" secondItem="qub-Z3-wuy" secondAttribute="bottom" constant="25" id="4On-HE-T6b"/>
+                <constraint firstItem="eJL-Lq-TD8" firstAttribute="leading" secondItem="AZH-2d-0U5" secondAttribute="leading" constant="20" id="ETQ-Bw-APr"/>
+                <constraint firstItem="AZH-2d-0U5" firstAttribute="trailing" secondItem="Fio-Oe-4g3" secondAttribute="trailing" constant="20" id="JCG-Um-nPq"/>
+                <constraint firstItem="Fio-Oe-4g3" firstAttribute="leading" secondItem="AZH-2d-0U5" secondAttribute="leading" constant="20" id="TxX-1M-O5Q"/>
+                <constraint firstItem="AZH-2d-0U5" firstAttribute="trailing" secondItem="Jc0-ue-GSw" secondAttribute="trailing" constant="20" id="be7-3v-AmH"/>
+                <constraint firstItem="qub-Z3-wuy" firstAttribute="top" secondItem="Jc0-ue-GSw" secondAttribute="bottom" constant="20" id="gw2-QZ-eeH"/>
+                <constraint firstItem="Jc0-ue-GSw" firstAttribute="leading" secondItem="AZH-2d-0U5" secondAttribute="leading" constant="20" id="h0N-Cm-T5J"/>
+                <constraint firstItem="Jc0-ue-GSw" firstAttribute="top" secondItem="AZH-2d-0U5" secondAttribute="top" id="mx9-jM-mIU"/>
+                <constraint firstItem="qub-Z3-wuy" firstAttribute="leading" secondItem="AZH-2d-0U5" secondAttribute="leading" constant="20" id="uMq-Mc-BWi"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BACKbutton" width="25" height="38"/>
+        <namedColor name="KidsBgColor">
+            <color red="0.20392156862745098" green="0.52156862745098043" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
